@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Auto Skin</title>
+    
+    
+</head>
+
+<body>
+    
+    <div class="banner">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt="Logo"></a>
+            </div>
+    
+            <ul class="navLinks">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+    
+                <li class="menuIcon">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                    
+                </li>
+
+
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+    </nav>
+     <svg width="700px" height="200px" viewBox="0 0 900 200" class="auto-skin-animation">
+        <text x="50" y="100" font-size="50" font-family="Race Guard" fill="none" stroke="Darkslategray" stroke-width="3" stroke-dasharray="500" stroke-dashoffset="500">
+            WELCOME TO AUTOSKIN
+            <animate attributeName="stroke-dashoffset" from="500" to="0" dur="4s" fill="freeze" />
+        </text>
+    </svg>
+ 
+</div>
+<title>GSAP Animation</title>
+
+</head>
+<body>
+<div class="box">
+    <img src="Images/Logo 2.png">
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script>
+    
+    gsap.to(".box", { duration: 2, x: 0, y: 50, rotation: 360 });
+</script>
+
+
+<div class="productBanner" id="CeramicCoating">
+    <h2 class="productHeading">Our Products</h2>
+
+    <div class="productCard">
+        <img src="Images/CeramicCoating.jpg">
+        <p>Ceramic Coating</p>
+    </div>
+
+    <div class="productCard" id="paintProtection">
+        <img src="Images/PaintProtectionFilm.jpg">
+        <p>Paint Protection Film</p>
+    </div>
+
+    <div class="productCard" id="carWraps">
+        <img src="Images/carWraps.jpg">
+        <p>Car Wraps</p>
+    </div>
+
+    <div class="productCard" id="WindowTints">
+        <img src="Images/WindowTints.jpg">
+        <p>Window Tints</p>
+    </div>
+</div>
+
+    <audio id="hoverSound" src="Sound/whoosh-motion-243505.mp3" preload="auto"></audio>
+
+    <script>
+      
+        const hoverSound = document.getElementById("hoverSound");
+        hoverSound.volume = 0.1; 
+    
+        const productCards = document.querySelectorAll(".productCard");
+    
+       
+        productCards.forEach(card => {
+            card.addEventListener("mouseover", () => {
+                hoverSound.currentTime = 0;
+                hoverSound.play();
+            });
+        });
+    </script>
+
+
+<div class="imageTextSection">
+
+    <img src="Images/CeramicCoating.jpg" class="imageLeft">
+    <div class="textRight">
+        <h2>Ceramic Coating</h2>
+        <p>Ceramic coating is a liquid polymer that is applied on the exterior of a car to stick chemically with the
+             factory finish paint in order to form a shield. It is a non-stick surface that can resist water and other
+              types of dirt as well as contaminants and is easy to clean while having numerous advantages. Hydrophobicity 
+              en able the surfaces to repel water by beading while the UV protection keeps paint from being affected by ultraviolet 
+              light. The coating also gives the car an enduring rich shine, and its chemical protection against acid rain stains,
+               bird deposits, and road salt. Compared to the paint protection film (PPF,) it has low levels of scratch resistance
+                but leaves a durable barrier to mild scratches only. Ceramic coating is specialty for car owners who want a lustrous 
+                surface with easy and convenient clean up of the car surface.</p>
+        <div class="btn1">
+            <a href="ceramic.html" class="button" target="_blank">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<div class="textImageSection2">
+    <div class="textLeft">
+        <h2>Paint Protection Film</h2>
+        <p>
+            
+Paint Protection Film (PPF) is a clear, ultra-thin film applied to a car’s exterior to shield it from damage and
+ preserve the original paintwork. It offers durable protection against physical damage such as scratches, rock chips,
+  and minor abrasions. Many modern PPFs feature a self-healing property that allows minor scratches to disappear when 
+  exposed to heat. Additionally, PPF provides UV resistance, which helps prevent paint fading caused by the sun, and stain 
+  resistance to guard against chemical contaminants like bird droppings, tree sap, and road tar. Available in both gloss and 
+  matte finishes, it enhances the car's appearance while offering lasting protection. PPF is particularly suited for
+   high-performance or luxury vehicles and for owners seeking long-term preservation of their car’s paint.
+        </p><div class="btn1">
+            <a href="ppf.html" class="button" target="_blank">Learn More</a>
+        </div>
+    </div>
+    <img src="Images/PaintProtectionFilm.jpg" class="imageRight">
+</div>
+
+<div class="imageTextSection">
+
+    <img src="Images/carWraps.jpg" class="imageLeft">
+    <div class="textRight">
+        <h2>Car Wraps</h2>
+        <p>Car wrapping is a large vinyl sticker or graphic that can be installed on a vehicle’s surface completely 
+            changing the aesthetics of the car. Coming in several colors, the wraps are also available in matte,
+             gloss, and satin sheens, as well as a variety of designs so that car owners can alter a car’s appearance
+              without repainting it. In addition to looks, car wraps provide a layer of protection to the paint work to
+               scuffs and scrapes. They are also reusable; removing them does not harm the paint that is already beneath
+                it; therefore, they are cheaper than painting entire automobiles. Originally designed for staff car fleets, 
+                car wraps are highly suitable for car lovers who want to customize their vehicles and companies wishing to 
+                use their vehicles as moving billboards.</p>
+        <div class="btn1">
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<div class="textImageSection2">
+    <div class="textLeft">
+        <h2>Window Tints</h2>
+        <p>Window tinting is the application of a thin film on the interior of a car’s windows to reduce sunlight, 
+            heat, and glare. Available in various shades to meet legal tint percentages, window tints offer several 
+            key benefits. They block up to 99% of harmful UV rays, protecting passengers and the car’s interior from 
+            sun damage, while also reducing heat to keep the car cooler. Additionally, window tints minimize glare from 
+            headlights and sunlight, improving visibility and enhancing driving comfort. The tint also darkens the windows, 
+            increasing privacy and security, and helps protect the upholstery and dashboard from fading and cracking. 
+            Ideal for drivers seeking added comfort and privacy, window tints are especially useful for those in hot 
+            climates looking to lower interior temperatures.
+           </p><div class="btn1">
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </div>
+    <img src="Images/WindowTints.jpg" class="imageRight">
+</div>
+
+<footer>
+    <div class="footerContainer">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="Images/fb.png" class="socialIcon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="Images/insta.png" class="socialIcon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="Images/x.png" class="socialIcon">
+        </a>
+    </div>
+</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
